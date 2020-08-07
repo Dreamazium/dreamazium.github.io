@@ -1,7 +1,7 @@
-
+/*eslint-env browser*/
 
 /***********
- * test App
+ * COVID19 Statistics App
  * 
  * File modified by: (Tony McDonald)
  ************/
@@ -40,9 +40,9 @@ var app = {
         
         function Advice(){
 			// These varibles are private
-			var adviceObject = {};
+			var covidStatsObject = {};
 			//Call to read in the address and turn this into a report
-			adviceObject.update = function (){
+			covidStatsObject.update = function (){
 				var country = get_name_value("country", "United Kingdom");
 				updateStats(country);
 			}
@@ -61,4 +61,4 @@ var app = {
 	}
 };
 app.initialize();
-alert("hello");
+
