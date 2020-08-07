@@ -27,7 +27,7 @@ var app = {
        
         function myAdvice() {
             
-            var uri = 'https://api.adviceslip.com/advice'
+            var uri = "https://api.adviceslip.com/advice"
             var onSuccess = function(data){
                 var obj = JSON.parse(data);
                 document.getElementById("advice").innerHTML = obj.slip.advice;   
@@ -53,4 +53,4 @@ var app = {
 	}
 };
 app.initialize();
-
+alert("hello");
