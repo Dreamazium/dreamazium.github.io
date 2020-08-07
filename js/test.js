@@ -13,7 +13,7 @@ var app = {
         // this.onDeviceReady();
 		document.addEventListener(
 			"deviceready",
-			this.onDeviceReady(),
+			this.onDeviceReady(this),
 			false
         );
 	},
