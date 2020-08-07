@@ -37,25 +37,20 @@ var app = {
         }
         
         function Advice(){
-			// These varibles are private
-			var covidStatsObject = {};
-			//Call to read in the address and turn this into a report
-			covidStatsObject.update = function (){
-				var country = get_name_value("country", "United Kingdom");
-				updateStats(country);
-			}
-
-            covidStatsObject.newAdvice = function(){
+		// These varibles are private
+		var adviceObject = {};
+		
+		adviceObject.newAdvice = function() {
                 //if (timerId) clearInterval(timerId);
                 timerId = setInterval(myAdvice, 6e4); 
                 myAdvice();
-            }
-			//return the intialised object
-			return covidStatsObject;
-		}
-		app.advice = new Advice();
+            	}
+		//return the intialised object
+		return adviceObject;
+	}
+	app.advice = new Advice();
         app.advice.newAdvice();
 	}
 };
 app.initialize();
-
+alert("hello");
