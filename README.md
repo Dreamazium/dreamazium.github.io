@@ -1,3 +1,3 @@
 # my-webpage
 A webpage
-https://dreamazium.github.io/dreamazium.io/
+https://dreamazium.github.io/
