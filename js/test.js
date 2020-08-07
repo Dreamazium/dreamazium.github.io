@@ -1,7 +1,5 @@
-/*eslint-env browser*/
-
 /***********
- * COVID19 Statistics App
+ * advice App
  * 
  * File modified by: (Tony McDonald)
  ************/
@@ -15,7 +13,7 @@ var app = {
         // this.onDeviceReady();
 		document.addEventListener(
 			"deviceready",
-			this.onDeviceReady(this),
+			this.onDeviceReady(),
 			false
         );
 	},
@@ -55,7 +53,6 @@ var app = {
 			//return the intialised object
 			return covidStatsObject;
 		}
-		//Create the Weather object, visible in the HTML file as app.weather
 		app.advice = new Advice();
         app.advice.newAdvice();
 	}
