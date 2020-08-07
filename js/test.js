@@ -1,4 +1,4 @@
-/*eslint-env browser*/
+
 
 /***********
  * test App
@@ -40,9 +40,9 @@ var app = {
         
         function Advice(){
 			// These varibles are private
-			var covidStatsObject = {};
+			var adviceObject = {};
 			//Call to read in the address and turn this into a report
-			covidStatsObject.update = function (){
+			adviceObject.update = function (){
 				var country = get_name_value("country", "United Kingdom");
 				updateStats(country);
 			}
