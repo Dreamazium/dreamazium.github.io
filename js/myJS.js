@@ -53,4 +53,4 @@ var app = {
 	}
 };
 app.initialize();
-alert("hello");
+
